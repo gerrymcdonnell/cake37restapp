@@ -247,14 +247,14 @@ return [
         'default' => [
             'className' => 'Cake\Database\Connection',
             'driver' => 'Cake\Database\Driver\Mysql',
-            'persistent' => false,
-            'host' => env('APP_DATABASE_HOST',null),
+            'persistent' => false,            
             /*
              * CakePHP will use the default DB port based on the driver selected
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
              * the following line and set the port accordingly
              */
             //'port' => 'non_standard_port_number',
+            'host' => env('APP_DATABASE_HOST',null),
             'username' => env('APP_DATABASE_USERNAME',null),
             'password' => env('APP_DATABASE_PASSWORD',null),
             'database' => env('APP_DATABASE_NAME',null),
