@@ -1,0 +1,130 @@
+2019-04-17 12:48:50 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query('SHOW TABLES FRO...')
+#5 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SHOW TABLES FRO...', Array)
+#8 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1093): Cake\Database\Schema\Collection->listTables()
+#9 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1046): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#11 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#12 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'courses', 'Courses')
+#13 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Courses')
+#14 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Courses')
+#15 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Courses', 0)
+#16 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#17 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('courses')
+#18 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\CommandRunner.php(367): Cake\Console\Shell->runCommand(Array, true)
+#19 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#20 C:\xampp2\htdocs\cake37restapp\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#21 {main}
+
+
+2019-04-17 12:50:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query('SHOW TABLES FRO...')
+#5 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SHOW TABLES FRO...', Array)
+#8 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1093): Cake\Database\Schema\Collection->listTables()
+#9 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1046): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#11 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#12 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'courses', 'Courses')
+#13 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Courses')
+#14 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Courses')
+#15 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Courses', 0)
+#16 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#17 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('courses')
+#18 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\CommandRunner.php(367): Cake\Console\Shell->runCommand(Array, true)
+#19 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#20 C:\xampp2\htdocs\cake37restapp\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#21 {main}
+
+
+2019-04-17 12:54:57 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query('SHOW TABLES FRO...')
+#5 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SHOW TABLES FRO...', Array)
+#8 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1093): Cake\Database\Schema\Collection->listTables()
+#9 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1046): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#11 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#12 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'courses', 'Courses')
+#13 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Courses')
+#14 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Courses')
+#15 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Courses', 0)
+#16 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#17 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('courses')
+#18 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\CommandRunner.php(367): Cake\Console\Shell->runCommand(Array, true)
+#19 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#20 C:\xampp2\htdocs\cake37restapp\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#21 {main}
+
+
+2019-04-17 12:55:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query('SHOW TABLES FRO...')
+#5 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SHOW TABLES FRO...', Array)
+#8 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1093): Cake\Database\Schema\Collection->listTables()
+#9 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1046): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#11 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#12 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'courses', 'Courses')
+#13 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Courses')
+#14 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Courses')
+#15 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Courses', 0)
+#16 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#17 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('courses')
+#18 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\CommandRunner.php(367): Cake\Console\Shell->runCommand(Array, true)
+#19 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#20 C:\xampp2\htdocs\cake37restapp\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#21 {main}
+
+
+2019-04-17 12:56:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query('SHOW TABLES FRO...')
+#5 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SHOW TABLES FRO...', Array)
+#8 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1093): Cake\Database\Schema\Collection->listTables()
+#9 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1046): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#11 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\CoursesTable))
+#12 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\CoursesTable), 'courses', 'Courses')
+#13 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Courses')
+#14 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Courses')
+#15 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Courses', 0)
+#16 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#17 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('courses')
+#18 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\CommandRunner.php(367): Cake\Console\Shell->runCommand(Array, true)
+#19 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#20 C:\xampp2\htdocs\cake37restapp\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#21 {main}
+
+

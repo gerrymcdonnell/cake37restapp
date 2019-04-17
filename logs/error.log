@@ -1,0 +1,120 @@
+2019-04-17 13:01:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Courses.json could not be found.
+Exception Attributes: array (
+  'class' => 'Courses.json',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(89): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#2 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp2\htdocs\cake37restapp\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /courses.json
+
+
+2019-04-17 13:04:15 Error: [Cake\View\Exception\MissingTemplateException] Template file "Courses\json\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Courses\\json\\index.ctp',
+)
+#0 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\View\SerializedView.php(104): Cake\View\View->_getViewFileName('Courses\\json\\in...')
+#1 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\View\JsonView.php(107): Cake\View\SerializedView->render(NULL, NULL)
+#2 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Controller\Controller.php(791): Cake\View\JsonView->render(NULL, NULL)
+#3 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CoursesController))
+#5 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp2\htdocs\cake37restapp\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+Request URL: /courses.json
+
+
+2019-04-17 13:04:32 Error: [Cake\View\Exception\MissingTemplateException] Template file "Courses\json\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Courses\\json\\index.ctp',
+)
+#0 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\View\SerializedView.php(104): Cake\View\View->_getViewFileName('Courses\\json\\in...')
+#1 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\View\JsonView.php(107): Cake\View\SerializedView->render(NULL, NULL)
+#2 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Controller\Controller.php(791): Cake\View\JsonView->render(NULL, NULL)
+#3 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CoursesController))
+#5 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp2\htdocs\cake37restapp\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+Request URL: /courses.json
+
+
+2019-04-17 13:12:50 Error: [PDOException] SQLSTATE[HY000] [1049] Unknown database 'cake37restappxx'
+#0 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(106): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Database\Connection.php(391): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\ORM\Table.php(554): Cake\Database\Connection->getSchemaCollection()
+#8 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\ORM\Query.php(269): Cake\ORM\Table->getSchema()
+#9 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\ORM\Query.php(167): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\CoursesTable))
+#10 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\ORM\Table.php(1764): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\CoursesTable))
+#11 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\ORM\Table.php(1357): Cake\ORM\Table->query()
+#12 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Datasource\Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#13 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\CoursesTable), Array, Array)
+#14 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Controller\Controller.php(886): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\CoursesTable), Array)
+#15 C:\xampp2\htdocs\cake37restapp\src\Controller\CoursesController.php(22): Cake\Controller\Controller->paginate(Object(App\Model\Table\CoursesTable))
+#16 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\CoursesController->index()
+#17 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#18 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CoursesController))
+#19 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\xampp2\htdocs\cake37restapp\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp2\htdocs\cake37restapp\webroot\index.php(40): Cake\Http\Server->run()
+#32 {main}
+Request URL: /courses
+
+
